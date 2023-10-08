@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/lightgray"
+
+        android:layout_marginTop="24dp">
+        <TextView
+            android:id="@+id/fast_food_title_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fast_food_description_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
