@@ -15,9 +15,9 @@ import java.util.ArrayList;
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DatabaseName="Fast Food";
     private static final int DatabaseVersion = 1;
-    private final String FAST_FOOD_TABLE="restaurants_fast_food";
+    private static final String FAST_FOOD_TABLE="restaurants_fast_food";
 
-    private final String FAST_FOOD_MEALS_LIST_TABLE="fast_food_meals_list";
+    private static final String FAST_FOOD_MEALS_LIST_TABLE="fast_food_meals_list";
 
 
     // je transmets les informations neccesaires chaque fois que j'instancie cette classe

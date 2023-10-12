@@ -50,7 +50,5 @@ public FastFoodAdapter(Context context, ArrayList <FastFood> fastFoods){
         return convertView;
 
 
-
-
    }
 }
