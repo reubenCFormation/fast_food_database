@@ -119,7 +119,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public FastFood findFastFood(SQLiteDatabase db,int fastFoodId){
         String[] selectionArgs={String.valueOf(fastFoodId)};
-        Cursor cursor=db.rawQuery("SELECT * FROM "+ FAST_FOOD_TABLE+ "WHERE id = ?",selectionArgs);
+        Cursor cursor=db.rawQuery("SELECT * FROM "+ FAST_FOOD_TABLE+ " WHERE id = ?",selectionArgs);
         // si nous avons bien un resultat
         if(cursor.moveToFirst()){
             int restaurantId=cursor.getColumnIndex("id");
