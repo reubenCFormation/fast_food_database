@@ -98,7 +98,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             Ici je vais preparer ma requette pour me proteger d'injection sql. Dans un 2eme temps je vais preciser la valeu ractuelle en utilisant mon tableau que j'ai crée et en lui alimentnat avec la valeur de mon parametre. Etant donnée que ici je souhaite recuperer tous les repas pour un restaurant fast food en particulier
          */
         String[] selectionArgs={String.valueOf(fastFoodId)};
-        Cursor cursor=db.rawQuery("SELECT * FROM "+ FAST_FOOD_MEALS_LIST_TABLE+ "WHERE id = ?",selectionArgs);
+        Cursor cursor=db.rawQuery("SELECT * FROM "+ FAST_FOOD_MEALS_LIST_TABLE+ " WHERE fast_food_restaurants_id = ?",selectionArgs);
 
         int idIndex=cursor.getColumnIndex("id");
         int mealTitleIndex=cursor.getColumnIndex("meal_title");
